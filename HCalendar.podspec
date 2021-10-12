@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "HCalendar"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of HCalendar."
+  spec.summary      = "Horizontal scrollable calendar for week view just like on iOS calendar."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  This calendar shows week view and can be scrolled back and forth endlessly. You can select any date you want.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/HCalendar"
+  spec.homepage     = "https://github.com/youssefAndro/HCalendarView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
