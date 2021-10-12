@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "HCalendar"
+  spec.name         = "HCalendarView"
   spec.version      = "1.0.0"
   spec.summary      = "Horizontal scrollable calendar for week view just like on iOS calendar."
 
@@ -18,6 +18,9 @@ Pod::Spec.new do |spec|
   spec.author             = { "youssef aqabbou" => "youssef.aqabbou@gmail.com" }
   
   spec.source       = { :git => "https://github.com/youssefAndro/HCalendarView.git", :tag => "#{spec.version}" }
+  
+  spec.ios.deployment_target = "14.0"
+  spec.swift_version = "5.0"
 
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
