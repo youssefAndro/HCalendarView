@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HCalendar"
-  spec.version      = "1.0.7"
+  spec.version      = "1.1.0"
   spec.summary      = "Horizontal scrollable calendar for week view just like on iOS calendar."
 
   spec.description  = <<-DESC
@@ -25,5 +25,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'Source/**/*.swift'
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
+
+  spec.frameworks = 'SwiftUIPager'
   
 end

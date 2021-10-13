@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,10 +26,10 @@
 		526270E827073DAF001F1EFC /* ExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526270E727073DAF001F1EFC /* ExtensionHelper.swift */; };
 		526270EA27075941001F1EFC /* EventUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526270E927075940001F1EFC /* EventUtils.swift */; };
 		52748334271053D200717063 /* HCalendarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52748333271053D200717063 /* HCalendarConfig.swift */; };
-		529D5D2D2714496000462F2C /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 529D5D2C2714496000462F2C /* SwiftUIPager */; };
 		52F26139270B18ED004838F7 /* TimeLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F26138270B18ED004838F7 /* TimeLineConfig.swift */; };
 		52F2613C270C98EF004838F7 /* TimeLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2613B270C98EF004838F7 /* TimeLineStyle.swift */; };
 		52F2613E270C9908004838F7 /* TimeLineTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2613D270C9908004838F7 /* TimeLineTheme.swift */; };
+		E6054F17787902C453AFAC68 /* Pods_HCalendarLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +57,9 @@
 		52F26138270B18ED004838F7 /* TimeLineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineConfig.swift; sourceTree = "<group>"; };
 		52F2613B270C98EF004838F7 /* TimeLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineStyle.swift; sourceTree = "<group>"; };
 		52F2613D270C9908004838F7 /* TimeLineTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTheme.swift; sourceTree = "<group>"; };
+		7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCalendarLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendarLibrary.release.xcconfig"; path = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendarLibrary.debug.xcconfig"; path = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +67,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529D5D2D2714496000462F2C /* SwiftUIPager in Frameworks */,
+				E6054F17787902C453AFAC68 /* Pods_HCalendarLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243517FCD9A4E7EE86F1869F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */,
+				B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5262708027021C88001F1EFC = {
 			isa = PBXGroup;
 			children = (
 				5262708C27021C88001F1EFC /* HCalendarLibrary */,
 				5262708B27021C88001F1EFC /* Products */,
+				243517FCD9A4E7EE86F1869F /* Pods */,
+				54453297ED793EA43C1D0CC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +111,8 @@
 				526270D427030DFA001F1EFC /* View */,
 				526270D527030E0C001F1EFC /* ViewModel */,
 			);
-			path = HCalendarLibrary;
+			name = HCalendarLibrary;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		526270D227030DDD001F1EFC /* Utils */ = {
@@ -149,6 +164,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		54453297ED793EA43C1D0CC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5262709227021C88001F1EFC /* Build configuration list for PBXNativeTarget "HCalendarLibrary" */;
 			buildPhases = (
+				28D928D7EC5CC2C85EB48CAA /* [CP] Check Pods Manifest.lock */,
 				5262708527021C88001F1EFC /* Headers */,
 				5262708627021C88001F1EFC /* Sources */,
 				5262708727021C88001F1EFC /* Frameworks */,
@@ -178,7 +202,6 @@
 			);
 			name = HCalendarLibrary;
 			packageProductDependencies = (
-				529D5D2C2714496000462F2C /* SwiftUIPager */,
 			);
 			productName = HCalendarLibrary;
 			productReference = 5262708A27021C88001F1EFC /* HCalendarLibrary.framework */;
@@ -208,7 +231,6 @@
 			);
 			mainGroup = 5262708027021C88001F1EFC;
 			packageReferences = (
-				529D5D2B2714496000462F2C /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 			);
 			productRefGroup = 5262708B27021C88001F1EFC /* Products */;
 			projectDirPath = "";
@@ -228,6 +250,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28D928D7EC5CC2C85EB48CAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HCalendarLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5262708627021C88001F1EFC /* Sources */ = {
@@ -385,6 +432,7 @@
 		};
 		5262709327021C88001F1EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -411,6 +459,7 @@
 		};
 		5262709427021C88001F1EFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -456,25 +505,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		529D5D2B2714496000462F2C /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fermoya/SwiftUIPager.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		529D5D2C2714496000462F2C /* SwiftUIPager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 529D5D2B2714496000462F2C /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
-			productName = SwiftUIPager;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5262708127021C88001F1EFC /* Project object */;
 }

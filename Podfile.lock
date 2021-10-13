@@ -1,0 +1,16 @@
+PODS:
+  - SwiftUIPager (2.3.1)
+
+DEPENDENCIES:
+  - SwiftUIPager (~> 2.3.1)
+
+SPEC REPOS:
+  trunk:
+    - SwiftUIPager
+
+SPEC CHECKSUMS:
+  SwiftUIPager: 273cbaec55a03784d5fbec30f57d8b8974e60450
+
+PODFILE CHECKSUM: 05bd52c00101d15b260a22fc79c78b47e9bded0d
+
+COCOAPODS: 1.10.1

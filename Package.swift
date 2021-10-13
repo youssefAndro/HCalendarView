@@ -14,10 +14,11 @@ let package = Package(
             targets: ["HCalendarView"]),
     ],
     dependencies: [],
-    targets: [
-        .target(
-            name: "HCalendarView",
-            dependencies: []),
-    ],
+    targets: [.target(name: "HCalendarView",
+                      path: "Source",
+                      linkerSettings: [.linkedFramework("SwiftUIPager",
+                                                        .when(platforms: [.iOS]))])
+            ],
+   
     swiftLanguageVersions: [.v5]
 )
