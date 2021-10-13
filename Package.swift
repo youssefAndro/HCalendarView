@@ -11,10 +11,10 @@ let package = Package(
     products: [
         .library(
             name: "HCalendar",
-            targets: ["HCalendarView"]),
+            targets: ["HCalendar"]),
     ],
     dependencies: [],
-    targets: [.target(name: "HCalendarView",
+    targets: [.target(name: "HCalendar",
                       path: "Source",
                       linkerSettings: [.linkedFramework("SwiftUIPager",
                                                         .when(platforms: [.iOS]))])
