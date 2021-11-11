@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E901B56EE32720D47F24F97A3327248"
-               BuildableName = "Pods_HCalendarLibrary.framework"
-               BlueprintName = "Pods-HCalendarLibrary"
+               BlueprintIdentifier = "3A68FC6CAE0B82EF91DC435404B85BC9"
+               BuildableName = "Pods_HCalendar.framework"
+               BlueprintName = "Pods-HCalendar"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

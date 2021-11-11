@@ -30,6 +30,7 @@ public struct HCalendarDayStyle {
 
 public struct HCalendarWeekStyle {
     public var foreground = Color.white
+    public var font = "SF"
     public var fontSize : CGFloat = 16
 }
 
@@ -39,9 +40,14 @@ public struct HCalendarNavStyle {
     public var navImageW : CGFloat = 30
     public var navImageH : CGFloat = 30
     public var navRadius : CGFloat = 10
-    public var foreground = Color.white
-    public var showToday = true
+    public var navStrokeColor = Color.white
+    public var navStrokeWidth : CGFloat = 1
+    public var navBg = Color.black
+    public var navFg = Color.white
     
-    public var strokeToday = Color.orange
-    public var strokeNav = Color.white
+    public var showToday = true
+    public var todayStrokeColor = Color.orange
+    public var todayStrokeWidth : CGFloat = 1
+    public var todayBg = Color.black
+    public var todayFg = Color.white
 }

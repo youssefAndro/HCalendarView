@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00EAA5C6411899AF47956CD8D36D1463 /* CGPoint+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DA36A5D72220451E07D9CF36D0813D /* CGPoint+Angle.swift */; };
-		17495EA715FC7D31F54CC383026C02AE /* Pods-HCalendarLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8925D69A32D45944ED502B7665D2AD5 /* Pods-HCalendarLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180EBDEEB4A422E96BB63731C93E2020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1E325E625F7FF69781283531C0EE7003 /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C52C0A75CB49559632158189655DA8 /* Pager.swift */; };
 		1E34A33FF99FF2C168CCA7295BA2F4BC /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1FCA8D53D1C6EA27315F46EAD38591 /* SwipeDirection.swift */; };
 		33C148EEC65655C1C4913620965AA545 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3F02F37A3C0F3F694FDCFCBEEAD060FC /* Pods-HCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F74BA7DA02EC562EBDF5ECD48923F /* Pods-HCalendar-dummy.m */; };
 		458094CF93BAFE7AE41C0F6F73805697 /* SwiftUIPager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CB1B1DF737BD4CA668F1BA6F8D1883 /* SwiftUIPager-dummy.m */; };
 		46B632A8D9704EF1AB6498DC63558EB5 /* PagerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC631F681F97DE9CC11C4D12D7D3728F /* PagerContent.swift */; };
 		472AD4633E21DEB88DC5D2A5E0B55B0C /* Pager+Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D94125BCB2ABF4D3E9F379AABF57089 /* Pager+Buildable.swift */; };
@@ -29,14 +30,13 @@
 		B22B45C1A286FFCB3D321A812F3AF11B /* PositionAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06669429A8060F9C0A17DDF036E445AA /* PositionAlignment.swift */; };
 		B6C48C58571C9C731BA1D6C7B954D792 /* PageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02EF69EC76E1055A14B2B7678472694 /* PageTransition.swift */; };
 		B80756EF17B3D543935E61F06BAF15B6 /* ContentLoadingPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E601CC7C50A5CD428F3A43EF647A8C4 /* ContentLoadingPolicy.swift */; };
-		C99D4B4F8E23827FED9580CE0D1B7A99 /* Pods-HCalendarLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC859E2681BB1802B03217F32761B2B1 /* Pods-HCalendarLibrary-dummy.m */; };
-		D3B569BE4FA32EDCDE142510F09C22FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D852D12013D659F81D388C4A0785D3B1 /* OnAnimationCompletedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD50596B0661BDD6770D2018DC5D7E6 /* OnAnimationCompletedModifier.swift */; };
+		DF8E6BEDD76F8D71DCFAC9CC749D7706 /* Pods-HCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9616B5508F989A28BCFCF4916AC0841B /* Pods-HCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6743D688F7B61DCA39BE7F7B2817213 /* OnDeactivateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403EB431956040B71AA60739D9A41F3 /* OnDeactivateModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C911A3585AF07A058B101530A2DDC052 /* PBXContainerItemProxy */ = {
+		1F94DEBEA9DF5101B24CEC12DCE92108 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,18 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CD05D836C23AA41ADBC6E9CEDAA9AD /* Pods-HCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HCalendar.modulemap"; sourceTree = "<group>"; };
 		06669429A8060F9C0A17DDF036E445AA /* PositionAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAlignment.swift; path = Sources/SwiftUIPager/PageConfiguration/PositionAlignment.swift; sourceTree = "<group>"; };
 		13FBC4301838366161DDAA14FBE60478 /* SwiftUIPager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUIPager-umbrella.h"; sourceTree = "<group>"; };
 		13FF45B318333126A606607852D59C5D /* SwiftUIPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.debug.xcconfig; sourceTree = "<group>"; };
 		1403EB431956040B71AA60739D9A41F3 /* OnDeactivateModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnDeactivateModifier.swift; path = Sources/SwiftUIPager/Helpers/OnDeactivateModifier.swift; sourceTree = "<group>"; };
+		2200D434DCCA95AB4056EAB82AC2F179 /* Pods-HCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		22DA36A5D72220451E07D9CF36D0813D /* CGPoint+Angle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Angle.swift"; path = "Sources/SwiftUIPager/Helpers/CGPoint+Angle.swift"; sourceTree = "<group>"; };
-		29632EEB78FD7F5D40029B8CC5CE6901 /* Pods-HCalendarLibrary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCalendarLibrary-acknowledgements.plist"; sourceTree = "<group>"; };
+		2AA623F8EF077A1B3318AAA919324992 /* Pods-HCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCalendar-Info.plist"; sourceTree = "<group>"; };
 		2B46768809661DA8A0A260F65BE5108D /* PaginationSensitivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaginationSensitivity.swift; path = Sources/SwiftUIPager/PageConfiguration/PaginationSensitivity.swift; sourceTree = "<group>"; };
+		2CAFC520CB95E3A645E2184717517B9C /* Pods-HCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		45CB1B1DF737BD4CA668F1BA6F8D1883 /* SwiftUIPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUIPager-dummy.m"; sourceTree = "<group>"; };
 		49E2103428FCB91F4045D4C5F840FFCF /* PagerContent+Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PagerContent+Buildable.swift"; path = "Sources/SwiftUIPager/PagerContent+Buildable.swift"; sourceTree = "<group>"; };
+		4C9DA534F8C9AEED059AA5A318C1EB6B /* Pods_HCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCalendar.framework; path = "Pods-HCalendar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E601CC7C50A5CD428F3A43EF647A8C4 /* ContentLoadingPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentLoadingPolicy.swift; path = Sources/SwiftUIPager/PageConfiguration/ContentLoadingPolicy.swift; sourceTree = "<group>"; };
-		4F40F1AE1C343852AA389E362EAA86EB /* Pods-HCalendarLibrary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCalendarLibrary-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57201DE3823E75D92000B6F1B67D9E38 /* Pods-HCalendarLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HCalendarLibrary.modulemap"; sourceTree = "<group>"; };
 		57C52C0A75CB49559632158189655DA8 /* Pager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pager.swift; path = Sources/SwiftUIPager/Pager.swift; sourceTree = "<group>"; };
 		5AD50596B0661BDD6770D2018DC5D7E6 /* OnAnimationCompletedModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnAnimationCompletedModifier.swift; path = Sources/SwiftUIPager/Helpers/OnAnimationCompletedModifier.swift; sourceTree = "<group>"; };
 		5F83E5B3BB1F51586A8A4630D791D536 /* SwiftUIPager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftUIPager-Info.plist"; sourceTree = "<group>"; };
@@ -66,20 +68,18 @@
 		7E75EC6528A16764C0B369F89A220B07 /* SwipeInteractionArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractionArea.swift; path = Sources/SwiftUIPager/PageConfiguration/SwipeInteractionArea.swift; sourceTree = "<group>"; };
 		7FE58681860217814990E5C2BBAA652B /* SwiftUIPager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUIPager-prefix.pch"; sourceTree = "<group>"; };
 		8D94125BCB2ABF4D3E9F379AABF57089 /* Pager+Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Pager+Buildable.swift"; path = "Sources/SwiftUIPager/Pager+Buildable.swift"; sourceTree = "<group>"; };
-		93748429F4A90347026FE3D612F5DF07 /* Pods-HCalendarLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCalendarLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		937BE1BFC37E20903864A8919FBA23B7 /* PagingAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingAnimation.swift; path = Sources/SwiftUIPager/PageConfiguration/PagingAnimation.swift; sourceTree = "<group>"; };
+		9616B5508F989A28BCFCF4916AC0841B /* Pods-HCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCalendar-umbrella.h"; sourceTree = "<group>"; };
 		9CD92A204138290DBD3A894B4DC50875 /* GesturePriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GesturePriority.swift; path = Sources/SwiftUIPager/PageConfiguration/GesturePriority.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EFC9ADFCFEDB10F2DEBEBA3588E9EB2 /* Pods-HCalendarLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCalendarLibrary.debug.xcconfig"; sourceTree = "<group>"; };
-		AC859E2681BB1802B03217F32761B2B1 /* Pods-HCalendarLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCalendarLibrary-dummy.m"; sourceTree = "<group>"; };
-		B7CBB4E6E5CAC6577987DEDBB3D26566 /* Pods-HCalendarLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCalendarLibrary-Info.plist"; sourceTree = "<group>"; };
+		A7D089890056E847BD068540EDF0E71E /* Pods-HCalendar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCalendar-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7C4693C713C1FB473AD35231BDCA357 /* Pods-HCalendar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCalendar-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B81E576CDEA3BB6EE286754731DBBF3F /* PageWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageWrapper.swift; path = Sources/SwiftUIPager/PageWrapper.swift; sourceTree = "<group>"; };
-		B8925D69A32D45944ED502B7665D2AD5 /* Pods-HCalendarLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCalendarLibrary-umbrella.h"; sourceTree = "<group>"; };
+		BB0F74BA7DA02EC562EBDF5ECD48923F /* Pods-HCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCalendar-dummy.m"; sourceTree = "<group>"; };
 		C217A11B08BD154228466F357F67E9C1 /* Buildable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buildable.swift; path = Sources/SwiftUIPager/Helpers/Buildable.swift; sourceTree = "<group>"; };
 		C2F51D127F5DB32D3F442D2522C2B44A /* SwiftUIPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUIPager.modulemap; sourceTree = "<group>"; };
 		C45D354D2C1008D419027BAE6DBFFE2E /* SwiftUIPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIPager.release.xcconfig; sourceTree = "<group>"; };
 		CC631F681F97DE9CC11C4D12D7D3728F /* PagerContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerContent.swift; path = Sources/SwiftUIPager/PagerContent.swift; sourceTree = "<group>"; };
-		D7D05DC9F80A2F4BB6014D402628F845 /* Pods_HCalendarLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCalendarLibrary.framework; path = "Pods-HCalendarLibrary.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1FCA8D53D1C6EA27315F46EAD38591 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwiftUIPager/PageConfiguration/SwipeDirection.swift; sourceTree = "<group>"; };
 		ED987EB87158B05FD16299D150511C7F /* PagerContent+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PagerContent+Helper.swift"; path = "Sources/SwiftUIPager/PagerContent+Helper.swift"; sourceTree = "<group>"; };
 		EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftUIPager.framework; path = SwiftUIPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +88,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3ED0023A824B423D605D680A1CF020F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180EBDEEB4A422E96BB63731C93E2020 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A6985F7FB4EE13BAC00BBF522AF9F1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,25 +104,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A12EB0D0666A0CD7376FE895AE710AA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3B569BE4FA32EDCDE142510F09C22FB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00266B94466255D671855FE424C0D48B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2E3CBF6FDF2A4D629FD2F38DE20C961 /* Pods-HCalendarLibrary */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		3C0A61FC7DA5E08A66AE352EF1578968 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +121,22 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		6B00474A9E7F1FA0DAFD39A6DA045DB9 /* Pods-HCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				00CD05D836C23AA41ADBC6E9CEDAA9AD /* Pods-HCalendar.modulemap */,
+				B7C4693C713C1FB473AD35231BDCA357 /* Pods-HCalendar-acknowledgements.markdown */,
+				A7D089890056E847BD068540EDF0E71E /* Pods-HCalendar-acknowledgements.plist */,
+				BB0F74BA7DA02EC562EBDF5ECD48923F /* Pods-HCalendar-dummy.m */,
+				2AA623F8EF077A1B3318AAA919324992 /* Pods-HCalendar-Info.plist */,
+				9616B5508F989A28BCFCF4916AC0841B /* Pods-HCalendar-umbrella.h */,
+				2CAFC520CB95E3A645E2184717517B9C /* Pods-HCalendar.debug.xcconfig */,
+				2200D434DCCA95AB4056EAB82AC2F179 /* Pods-HCalendar.release.xcconfig */,
+			);
+			name = "Pods-HCalendar";
+			path = "Target Support Files/Pods-HCalendar";
 			sourceTree = "<group>";
 		};
 		7DB12359FFFE0E296DE521BD0F82994E /* SwiftUIPager */ = {
@@ -175,20 +183,12 @@
 			path = "../Target Support Files/SwiftUIPager";
 			sourceTree = "<group>";
 		};
-		C2E3CBF6FDF2A4D629FD2F38DE20C961 /* Pods-HCalendarLibrary */ = {
+		9E20D0093373A7873A1EF8672EFA910C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				57201DE3823E75D92000B6F1B67D9E38 /* Pods-HCalendarLibrary.modulemap */,
-				4F40F1AE1C343852AA389E362EAA86EB /* Pods-HCalendarLibrary-acknowledgements.markdown */,
-				29632EEB78FD7F5D40029B8CC5CE6901 /* Pods-HCalendarLibrary-acknowledgements.plist */,
-				AC859E2681BB1802B03217F32761B2B1 /* Pods-HCalendarLibrary-dummy.m */,
-				B7CBB4E6E5CAC6577987DEDBB3D26566 /* Pods-HCalendarLibrary-Info.plist */,
-				B8925D69A32D45944ED502B7665D2AD5 /* Pods-HCalendarLibrary-umbrella.h */,
-				9EFC9ADFCFEDB10F2DEBEBA3588E9EB2 /* Pods-HCalendarLibrary.debug.xcconfig */,
-				93748429F4A90347026FE3D612F5DF07 /* Pods-HCalendarLibrary.release.xcconfig */,
+				6B00474A9E7F1FA0DAFD39A6DA045DB9 /* Pods-HCalendar */,
 			);
-			name = "Pods-HCalendarLibrary";
-			path = "Target Support Files/Pods-HCalendarLibrary";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -197,8 +197,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				3C0A61FC7DA5E08A66AE352EF1578968 /* Pods */,
-				E113B018FF2B0217AAB2B3D7510FCA67 /* Products */,
-				00266B94466255D671855FE424C0D48B /* Targets Support Files */,
+				DABD1209C3866499D392ADA2D17C4110 /* Products */,
+				9E20D0093373A7873A1EF8672EFA910C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,10 +210,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E113B018FF2B0217AAB2B3D7510FCA67 /* Products */ = {
+		DABD1209C3866499D392ADA2D17C4110 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7D05DC9F80A2F4BB6014D402628F845 /* Pods_HCalendarLibrary.framework */,
+				4C9DA534F8C9AEED059AA5A318C1EB6B /* Pods_HCalendar.framework */,
 				EE18735978C1FD3A42D4D3D0356F3CA6 /* SwiftUIPager.framework */,
 			);
 			name = Products;
@@ -230,34 +230,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C306FC988A289B426142DA90D1FE4AFF /* Headers */ = {
+		3BDC1B643A8B894665C61C618207F2D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17495EA715FC7D31F54CC383026C02AE /* Pods-HCalendarLibrary-umbrella.h in Headers */,
+				DF8E6BEDD76F8D71DCFAC9CC749D7706 /* Pods-HCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E901B56EE32720D47F24F97A3327248 /* Pods-HCalendarLibrary */ = {
+		3A68FC6CAE0B82EF91DC435404B85BC9 /* Pods-HCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FE36BEF0E100FD4251ADEC4FC0DEEDC /* Build configuration list for PBXNativeTarget "Pods-HCalendarLibrary" */;
+			buildConfigurationList = 9CAD71EC7687B0747056FE736DD4B41D /* Build configuration list for PBXNativeTarget "Pods-HCalendar" */;
 			buildPhases = (
-				C306FC988A289B426142DA90D1FE4AFF /* Headers */,
-				1C02BC1D0015D0146A1FD9DEBDE76ADF /* Sources */,
-				A12EB0D0666A0CD7376FE895AE710AA4 /* Frameworks */,
-				8F709EB9AE98660B52CCE62E401F5227 /* Resources */,
+				3BDC1B643A8B894665C61C618207F2D1 /* Headers */,
+				7030A0D333E69554801A088F08467206 /* Sources */,
+				3ED0023A824B423D605D680A1CF020F0 /* Frameworks */,
+				59C35DA97B05A9CE1AF1E7B14D976FFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC087D1BC4855DA7F8FC7107329DE708 /* PBXTargetDependency */,
+				AF41AAF08D4D7C81D8BA22CEEAA6961C /* PBXTargetDependency */,
 			);
-			name = "Pods-HCalendarLibrary";
-			productName = "Pods-HCalendarLibrary";
-			productReference = D7D05DC9F80A2F4BB6014D402628F845 /* Pods_HCalendarLibrary.framework */;
+			name = "Pods-HCalendar";
+			productName = "Pods-HCalendar";
+			productReference = 4C9DA534F8C9AEED059AA5A318C1EB6B /* Pods_HCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */ = {
@@ -284,8 +284,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -296,18 +296,18 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E113B018FF2B0217AAB2B3D7510FCA67 /* Products */;
+			productRefGroup = DABD1209C3866499D392ADA2D17C4110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E901B56EE32720D47F24F97A3327248 /* Pods-HCalendarLibrary */,
+				3A68FC6CAE0B82EF91DC435404B85BC9 /* Pods-HCalendar */,
 				7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8F709EB9AE98660B52CCE62E401F5227 /* Resources */ = {
+		59C35DA97B05A9CE1AF1E7B14D976FFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,11 +324,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C02BC1D0015D0146A1FD9DEBDE76ADF /* Sources */ = {
+		7030A0D333E69554801A088F08467206 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99D4B4F8E23827FED9580CE0D1B7A99 /* Pods-HCalendarLibrary-dummy.m in Sources */,
+				3F02F37A3C0F3F694FDCFCBEEAD060FC /* Pods-HCalendar-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +343,11 @@
 				D852D12013D659F81D388C4A0785D3B1 /* OnAnimationCompletedModifier.swift in Sources */,
 				E6743D688F7B61DCA39BE7F7B2817213 /* OnDeactivateModifier.swift in Sources */,
 				75E469BB3C1A4A481CFB27FAE840FB6F /* Page.swift in Sources */,
-				472AD4633E21DEB88DC5D2A5E0B55B0C /* Pager+Buildable.swift in Sources */,
 				1E325E625F7FF69781283531C0EE7003 /* Pager.swift in Sources */,
+				472AD4633E21DEB88DC5D2A5E0B55B0C /* Pager+Buildable.swift in Sources */,
+				46B632A8D9704EF1AB6498DC63558EB5 /* PagerContent.swift in Sources */,
 				676DB9D5EA4457433E5101F9A75E911E /* PagerContent+Buildable.swift in Sources */,
 				64781894C74941377F03E2A5E9ED00FF /* PagerContent+Helper.swift in Sources */,
-				46B632A8D9704EF1AB6498DC63558EB5 /* PagerContent.swift in Sources */,
 				B6C48C58571C9C731BA1D6C7B954D792 /* PageTransition.swift in Sources */,
 				5BC58965F0C29E9034FCB26BABD435A2 /* PageWrapper.swift in Sources */,
 				4CF243803561BE87FD99C35A4BEA13DF /* PaginationSensitivity.swift in Sources */,
@@ -363,15 +363,90 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC087D1BC4855DA7F8FC7107329DE708 /* PBXTargetDependency */ = {
+		AF41AAF08D4D7C81D8BA22CEEAA6961C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftUIPager;
 			target = 7EDD561B01B453B33504B0EACB2107CC /* SwiftUIPager */;
-			targetProxy = C911A3585AF07A058B101530A2DDC052 /* PBXContainerItemProxy */;
+			targetProxy = 1F94DEBEA9DF5101B24CEC12DCE92108 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		20A6C29AB0857869C21F4BC8F54EB1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2200D434DCCA95AB4056EAB82AC2F179 /* Pods-HCalendar.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCalendar/Pods-HCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCalendar/Pods-HCalendar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CD116F651E398C4C742318D11E0EF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CAFC520CB95E3A645E2184717517B9C /* Pods-HCalendar.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCalendar/Pods-HCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCalendar/Pods-HCalendar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9F94F4E2CB4A089C6CF28EC25F1A499B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13FF45B318333126A606607852D59C5D /* SwiftUIPager.debug.xcconfig */;
@@ -473,44 +548,6 @@
 			};
 			name = Debug;
 		};
-		C333BCF5E1AB0D0A490A4D538A3E0BCE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93748429F4A90347026FE3D612F5DF07 /* Pods-HCalendarLibrary.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -609,43 +646,6 @@
 			};
 			name = Release;
 		};
-		F4407A5EA831E0049E2CD954C33B3850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EFC9ADFCFEDB10F2DEBEBA3588E9EB2 /* Pods-HCalendarLibrary.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -658,11 +658,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FE36BEF0E100FD4251ADEC4FC0DEEDC /* Build configuration list for PBXNativeTarget "Pods-HCalendarLibrary" */ = {
+		9CAD71EC7687B0747056FE736DD4B41D /* Build configuration list for PBXNativeTarget "Pods-HCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4407A5EA831E0049E2CD954C33B3850 /* Debug */,
-				C333BCF5E1AB0D0A490A4D538A3E0BCE /* Release */,
+				3CD116F651E398C4C742318D11E0EF24 /* Debug */,
+				20A6C29AB0857869C21F4BC8F54EB1F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

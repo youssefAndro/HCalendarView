@@ -28,10 +28,13 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.red
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color.red
+
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -56,10 +59,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color(hex: "#FED6A3")
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color(hex: "#FED6A3")
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -84,10 +89,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.black
+        navStyle.navFg = Color.black
+        navStyle.navBg = Color.black
+        navStyle.navStrokeColor = Color.black
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.black
-        navStyle.strokeNav = Color.black
+        navStyle.todayStrokeColor = Color.black
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -112,10 +119,13 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color(hex: "#F4A8B1")
+        navStyle.navFg = Color(hex: "#F4A8B1")
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color(hex: "#F4A8B1")
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color(hex: "#F4A8B1")
-        navStyle.strokeNav = Color(hex: "#F4A8B1")
+        navStyle.todayStrokeColor = Color(hex: "#F4A8B1")
+
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -140,10 +150,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.white
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color.white
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -168,10 +180,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.white
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color.white
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -196,10 +210,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.white
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color.white
         calendarStyle.nav =  navStyle
         
         return calendarStyle
@@ -224,10 +240,12 @@ public struct HCalendarTheme {
         calendarStyle.weekSymbol = weekStyle
         
         var navStyle =  HCalendarNavStyle()
-        navStyle.foreground = Color.white
+        navStyle.navFg = Color.white
+        navStyle.navBg = Color.white
+        navStyle.navStrokeColor = Color.white
+        
         navStyle.showToday = true
-        navStyle.strokeToday = Color.white
-        navStyle.strokeNav = Color.white
+        navStyle.todayStrokeColor = Color.white
         calendarStyle.nav =  navStyle
         
         return calendarStyle

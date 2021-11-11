@@ -11,14 +11,12 @@ public struct WeekDaysSymbolsView: View {
     var calendarConfig : HCalendarConfig
     var calendarWeekStyle = HCalendarWeekStyle()
     
-    //var weekdaySymbols = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    //var weekdaySymbols =
     public var body: some View {
         HStack(spacing: 0){
             ForEach(DateUtils.weekDaySymbols(weekDayFormat: calendarConfig.weekdaySymbolFormat, firstWeekday: calendarConfig.firstWeekday, local: calendarConfig.locale), id: \.self) { item in
                 Spacer()
                 Text(item)
-                    .font(.system(size: calendarWeekStyle.fontSize, weight: .medium))
+                    .font(.custom(calendarWeekStyle.font, size: calendarWeekStyle.fontSize))
                     .foregroundColor(calendarWeekStyle.foreground)
                 Spacer()
             }

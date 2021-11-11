@@ -29,10 +29,11 @@
 		52F26139270B18ED004838F7 /* TimeLineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F26138270B18ED004838F7 /* TimeLineConfig.swift */; };
 		52F2613C270C98EF004838F7 /* TimeLineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2613B270C98EF004838F7 /* TimeLineStyle.swift */; };
 		52F2613E270C9908004838F7 /* TimeLineTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2613D270C9908004838F7 /* TimeLineTheme.swift */; };
-		E6054F17787902C453AFAC68 /* Pods_HCalendarLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */; };
+		C3AB9DAF6DB0FFC9864608CD /* Pods_HCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5467D23E2E80F17CE65EA8 /* Pods_HCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		489186892D48584A7D505DC7 /* Pods-HCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendar.release.xcconfig"; path = "Target Support Files/Pods-HCalendar/Pods-HCalendar.release.xcconfig"; sourceTree = "<group>"; };
 		5262708A27021C88001F1EFC /* HCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5262708D27021C88001F1EFC /* HCalendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCalendar.h; sourceTree = "<group>"; };
 		5262708E27021C88001F1EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +58,8 @@
 		52F26138270B18ED004838F7 /* TimeLineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineConfig.swift; sourceTree = "<group>"; };
 		52F2613B270C98EF004838F7 /* TimeLineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineStyle.swift; sourceTree = "<group>"; };
 		52F2613D270C9908004838F7 /* TimeLineTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTheme.swift; sourceTree = "<group>"; };
-		7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCalendarLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendarLibrary.release.xcconfig"; path = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.release.xcconfig"; sourceTree = "<group>"; };
-		D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendarLibrary.debug.xcconfig"; path = "Target Support Files/Pods-HCalendarLibrary/Pods-HCalendarLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		A7346C33AAE4D25F8A177798 /* Pods-HCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCalendar.debug.xcconfig"; path = "Target Support Files/Pods-HCalendar/Pods-HCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5467D23E2E80F17CE65EA8 /* Pods_HCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6054F17787902C453AFAC68 /* Pods_HCalendarLibrary.framework in Frameworks */,
+				C3AB9DAF6DB0FFC9864608CD /* Pods_HCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +77,8 @@
 		243517FCD9A4E7EE86F1869F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */,
-				B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */,
+				A7346C33AAE4D25F8A177798 /* Pods-HCalendar.debug.xcconfig */,
+				489186892D48584A7D505DC7 /* Pods-HCalendar.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 		54453297ED793EA43C1D0CC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AFF1A2A0C1E9911528FAE0E /* Pods_HCalendarLibrary.framework */,
+				DC5467D23E2E80F17CE65EA8 /* Pods_HCalendar.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,8 +201,6 @@
 			dependencies = (
 			);
 			name = HCalendar;
-			packageProductDependencies = (
-			);
 			productName = HCalendarLibrary;
 			productReference = 5262708A27021C88001F1EFC /* HCalendar.framework */;
 			productType = "com.apple.product-type.framework";
@@ -230,8 +228,6 @@
 				Base,
 			);
 			mainGroup = 5262708027021C88001F1EFC;
-			packageReferences = (
-			);
 			productRefGroup = 5262708B27021C88001F1EFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,7 +263,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HCalendarLibrary-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-HCalendar-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,7 +428,7 @@
 		};
 		5262709327021C88001F1EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8664816331B7E00BC423820 /* Pods-HCalendarLibrary.debug.xcconfig */;
+			baseConfigurationReference = A7346C33AAE4D25F8A177798 /* Pods-HCalendar.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -459,7 +455,7 @@
 		};
 		5262709427021C88001F1EFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6E50BD0F02CA0FFBFA67D17 /* Pods-HCalendarLibrary.release.xcconfig */;
+			baseConfigurationReference = 489186892D48584A7D505DC7 /* Pods-HCalendar.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;

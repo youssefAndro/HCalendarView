@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/macbookpro/Documents/AjiCreative/Demo &amp; Libraries/HCalendarFramework/HCalendar.xcodeproj">
+      location = "group:HCalendar.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

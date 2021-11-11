@@ -86,6 +86,7 @@ public struct TimeLineView<EventView>:  View  where EventView: View {
                                                         .font(.custom(timeLineStyle.timeFont, size: timeLineStyle.timeSize))
                                                         .padding(.trailing , 2)
                                                     Text(index <= 12 ? timeLineStyle.amText : timeLineStyle.pmText )
+                                                        .font(.custom(timeLineStyle.timeFont, size: timeLineStyle.timeSize))
                                                         .padding(.trailing , 5)
                                                 }
                                                 .foregroundColor(timeLineStyle.timeColor)

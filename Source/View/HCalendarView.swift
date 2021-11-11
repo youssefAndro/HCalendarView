@@ -58,20 +58,20 @@ public struct HCalendarView: View {
                 } label:{
                     calendarStyle.nav.navLeftIcon
                         .font(.body.bold())
-                        .foregroundColor(calendarStyle.nav.foreground)
+                        .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
-                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.strokeNav, lineWidth: 1))
+                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
                        
                 }.opacity((selectedPage.index == 0 && !config.showPastWeek) ? 0 : 1)
                 
                 Spacer()
                 
                 ZStack(){
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.foreground)
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.navFg)
                         .offset(x: isMonthChanged ? 0 : fromNext ? 150 : -150)
                         .opacity(isMonthChanged ? 1 : 0)
                     
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.foreground)
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.navFg)
                         .offset(x: !isMonthChanged ? 0 : fromNext ? -150 : 150)
                         .opacity(isMonthChanged ? 0 : 1)
                 }
@@ -81,9 +81,9 @@ public struct HCalendarView: View {
                 if(config.showToday){
                     Text("T")
                         .font(.body.bold())
-                        .foregroundColor(calendarStyle.nav.foreground)
+                        .foregroundColor(calendarStyle.nav.todayFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
-                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.strokeToday, lineWidth: 1))
+                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.todayStrokeColor, lineWidth: calendarStyle.nav.todayStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.todayBg)))
                         .padding(.trailing, 20)
                         .onTapGesture {
                             //hCalendarVM.selectedDate =  hCalendarVM.todayDate
@@ -111,9 +111,9 @@ public struct HCalendarView: View {
                 } label:{
                     calendarStyle.nav.navRightIcon
                         .font(.body.bold())
-                        .foregroundColor(calendarStyle.nav.foreground)
+                        .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
-                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.strokeNav, lineWidth: 1))
+                        .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
                 }
                 
             }.padding()
