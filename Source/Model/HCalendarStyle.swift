@@ -15,6 +15,10 @@ public struct HCalendarStyle {
     public var day = HCalendarDayStyle()
     public var nav = HCalendarNavStyle()
     public var weekSymbol = HCalendarWeekStyle()
+    
+    public init() {
+        
+    }
 }
 
 public struct HCalendarDayStyle {
@@ -30,18 +34,30 @@ public struct HCalendarDayStyle {
     
     public var font = "SF"
     public var fontSize : CGFloat = 16
+    
+    public init() {
+        
+    }
 }
 
 public struct HCalendarWeekStyle {
     public var foreground = Color.white
     public var font = "SF"
     public var fontSize : CGFloat = 16
+    
+    public init() {
+        
+    }
 }
 
 public struct HCalendarMonthStyle {
     public var foreground = Color.black
     public var font = "SF"
     public var fontSize : CGFloat = 16
+    
+    public init() {
+        
+    }
 }
 
 public struct HCalendarNavStyle {
@@ -63,4 +79,8 @@ public struct HCalendarNavStyle {
     public var todayFg = Color.white
     public var todayfont = "SF"
     public var todaySize : CGFloat = 16
+    
+    public init() {
+        
+    }
 }
