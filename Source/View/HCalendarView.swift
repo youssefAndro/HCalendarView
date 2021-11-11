@@ -58,6 +58,7 @@ public struct HCalendarView: View {
                 } label:{
                     calendarStyle.nav.navLeftIcon
                         .font(.body.bold())
+                        .font(.system(size: calendarStyle.nav.navSize))
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
                         .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
@@ -67,11 +68,15 @@ public struct HCalendarView: View {
                 Spacer()
                 
                 ZStack(){
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.navFg)
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))")
+                        .font(.custom(calendarStyle.month.font, size: calendarStyle.month.fontSize))
+                        .foregroundColor(calendarStyle.month.foreground)
                         .offset(x: isMonthChanged ? 0 : fromNext ? 150 : -150)
                         .opacity(isMonthChanged ? 1 : 0)
                     
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))").foregroundColor(calendarStyle.nav.navFg)
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))")
+                        .font(.custom(calendarStyle.month.font, size: calendarStyle.month.fontSize))
+                        .foregroundColor(calendarStyle.month.foreground)
                         .offset(x: !isMonthChanged ? 0 : fromNext ? -150 : 150)
                         .opacity(isMonthChanged ? 0 : 1)
                 }
@@ -80,7 +85,7 @@ public struct HCalendarView: View {
                 
                 if(config.showToday){
                     Text("T")
-                        .font(.body.bold())
+                        .font(.custom(calendarStyle.nav.todayfont, size: calendarStyle.nav.todaySize))
                         .foregroundColor(calendarStyle.nav.todayFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
                         .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.todayStrokeColor, lineWidth: calendarStyle.nav.todayStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.todayBg)))
@@ -111,6 +116,7 @@ public struct HCalendarView: View {
                 } label:{
                     calendarStyle.nav.navRightIcon
                         .font(.body.bold())
+                        .font(.system(size: calendarStyle.nav.navSize))
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
                         .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
@@ -174,6 +180,7 @@ public struct HCalendarView: View {
                     .padding(.vertical, 5)
                     .overlay(
                         Text(date.day(locale: config.locale))
+                            .font(.custom(calendarStyle.day.font, size: calendarStyle.day.fontSize))
                             .foregroundColor(date.isEqual(to: hCalendarVM.selectedDate) ? calendarStyle.day.selectedFg : date == hCalendarVM.todayDate ? calendarStyle.day.current : date >= hCalendarVM.todayDate ? calendarStyle.day.future : calendarStyle.day.past)
                     ).onTapGesture {
                         if(config.showPastWeek || date >= hCalendarVM.todayDate){

@@ -27,6 +27,9 @@ public struct HCalendarTheme {
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
         
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground = Color.white
+        
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
         navStyle.navBg = Color.white
@@ -58,6 +61,9 @@ public struct HCalendarTheme {
         weekStyle.fontSize = 20
         calendarStyle.weekSymbol = weekStyle
         
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground = Color(hex: "#FED6A3")
+        
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
         navStyle.navBg = Color.white
@@ -88,6 +94,9 @@ public struct HCalendarTheme {
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
         
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground = Color.black
+        
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.black
         navStyle.navBg = Color.black
@@ -117,6 +126,9 @@ public struct HCalendarTheme {
         weekStyle.foreground = Color(hex: "#5B5B5B")
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
+        
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground =  Color(hex: "#F4A8B1")
         
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color(hex: "#F4A8B1")
@@ -149,6 +161,9 @@ public struct HCalendarTheme {
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
         
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground =  Color.white
+        
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
         navStyle.navBg = Color.white
@@ -178,6 +193,9 @@ public struct HCalendarTheme {
         weekStyle.foreground = Color.white
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
+        
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground =  Color.white
         
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
@@ -209,6 +227,9 @@ public struct HCalendarTheme {
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
         
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground =  Color.white
+        
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
         navStyle.navBg = Color.white
@@ -238,6 +259,9 @@ public struct HCalendarTheme {
         weekStyle.foreground = Color.white
         weekStyle.fontSize = 16
         calendarStyle.weekSymbol = weekStyle
+        
+        var monthStyle = HCalendarMonthStyle()
+        monthStyle.foreground =  Color.white
         
         var navStyle =  HCalendarNavStyle()
         navStyle.navFg = Color.white
