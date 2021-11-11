@@ -57,7 +57,7 @@ public struct HCalendarView: View {
                     onMonthChanged(page: selectedPage.index)
                 } label:{
                     calendarStyle.nav.navLeftIcon
-                        .font(.body.bold())
+                        .resizable()
                         .font(.system(size: calendarStyle.nav.navSize))
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
@@ -115,7 +115,6 @@ public struct HCalendarView: View {
                     onMonthChanged(page: selectedPage.index)
                 } label:{
                     calendarStyle.nav.navRightIcon
-                        .font(.body.bold())
                         .font(.system(size: calendarStyle.nav.navSize))
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
