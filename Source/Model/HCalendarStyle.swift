@@ -65,12 +65,13 @@ public struct HCalendarNavStyle {
     public var navRightIcon = Image(systemName: "chevron.right")
     public var navImageW : CGFloat = 30
     public var navImageH : CGFloat = 30
+    public var navIconW : CGFloat = 5
+    public var navIconH : CGFloat = 8
     public var navRadius : CGFloat = 10
     public var navStrokeColor = Color.white
     public var navStrokeWidth : CGFloat = 1
     public var navBg = Color.black
     public var navFg = Color.white
-    public var navSize : CGFloat = 16
     
     public var showToday = true
     public var todayStrokeColor = Color.orange

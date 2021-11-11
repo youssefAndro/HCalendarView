@@ -58,7 +58,7 @@ public struct HCalendarView: View {
                 } label:{
                     calendarStyle.nav.navLeftIcon
                         .resizable()
-                        .font(.system(size: calendarStyle.nav.navSize))
+                        .frame(width: calendarStyle.nav.navIconW, height: calendarStyle.nav.navIconH, alignment: .center)
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
                         .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
@@ -115,7 +115,8 @@ public struct HCalendarView: View {
                     onMonthChanged(page: selectedPage.index)
                 } label:{
                     calendarStyle.nav.navRightIcon
-                        .font(.system(size: calendarStyle.nav.navSize))
+                        .resizable()
+                        .frame(width: calendarStyle.nav.navIconW, height: calendarStyle.nav.navIconH, alignment: .center)
                         .foregroundColor(calendarStyle.nav.navFg)
                         .frame(width: calendarStyle.nav.navImageW, height: calendarStyle.nav.navImageH)
                         .background(RoundedRectangle(cornerRadius: calendarStyle.nav.navRadius).strokeBorder(calendarStyle.nav.navStrokeColor, lineWidth: calendarStyle.nav.navStrokeWidth).background(RoundedRectangle(cornerRadius:  calendarStyle.nav.navRadius).fill(calendarStyle.nav.navBg)))
