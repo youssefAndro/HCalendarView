@@ -88,7 +88,11 @@ extension Date {
     
     public func isInSameWeek(as date: Date) -> Bool { isEqual(to: date, toGranularity: .weekOfYear) }
     
-    public func isInSameDay(as date: Date) -> Bool { isEqual(to: date, toGranularity: .day) }
+    public func isInSameDay(as date: Date) -> Bool {
+        var calendar = Calendar.current
+        calendar.timeZone = TimeZone(abbreviation: "UTC")!
+        return calendar.isDate(self, inSameDayAs: date)
+    }
     
     public func timeIn24HourFormat(isConvertZone : Bool = false) -> String {
         let formatter = DateFormatter()

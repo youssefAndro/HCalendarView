@@ -216,16 +216,21 @@ class TimeLineViewModel : ObservableObject {
     func updateNowLine(reader : CGRect, scale : CGFloat){
         let now = DateUtils.getNowDateWithTZ()
         
-        if(now.isInSameDay(as: selectedDate)){
-            if(now.hour >= config.startHour && now.hour <= config.endHour && config.nowLineEnabled){
-                nowLinePosY = reader.minY  + ( (CGFloat(now.hour - config.startHour)) * (style.eventHeight * scale)) + ((CGFloat(now.minute) * (style.eventHeight * scale)) / 60)
-                nowLineAvailable = true
+        if(self.config.nowLineEnabled){
+            if(now.isInSameDay(as: selectedDate)){
+                if(now.hour >= config.startHour && now.hour <= config.endHour && config.nowLineEnabled){
+                    nowLinePosY = reader.minY  + ( (CGFloat(now.hour - config.startHour)) * (style.eventHeight * scale)) + ((CGFloat(now.minute) * (style.eventHeight * scale)) / 60)
+                    nowLineAvailable = true
+                }else{
+                    nowLineAvailable = false
+                }
             }else{
                 nowLineAvailable = false
             }
         }else{
             nowLineAvailable = false
         }
+        
        
     }
 }

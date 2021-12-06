@@ -21,6 +21,7 @@ public struct TimeLineConfig {
     public var adaptHour = 1
     
     public var nowLineEnabled = true
+    public var isScaleEnabled = true
     public var minScale : CGFloat = 0.5
     public var maxScale : CGFloat = 5
     

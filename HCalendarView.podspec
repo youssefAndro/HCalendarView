@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HCalendar"
-  spec.version      = "3.1.0"
+  spec.version      = "3.1.1"
   spec.summary      = "Horizontal scrollable calendar for week view just like on iOS calendar."
 
   spec.description  = <<-DESC

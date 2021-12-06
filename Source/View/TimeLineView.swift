@@ -137,13 +137,14 @@ public struct TimeLineView<EventView>:  View  where EventView: View {
                     }
                 })
                 .gesture(MagnificationGesture().onChanged { val in
-                    let delta = val / self.lastScaleValue
-                    self.lastScaleValue = val
-                    let newScale = self.scale * delta
-                    if(newScale > config.minScale && newScale < config.maxScale){
-                        self.scale = newScale
-                        timeLineVM.initEventPosition(reader: frame, scale: self.scale )
-                        
+                    if(self.config.isScaleEnabled){
+                        let delta = val / self.lastScaleValue
+                        self.lastScaleValue = val
+                        let newScale = self.scale * delta
+                        if(newScale > config.minScale && newScale < config.maxScale){
+                            self.scale = newScale
+                            timeLineVM.initEventPosition(reader: frame, scale: self.scale )
+                        }
                     }
                 }.onEnded { val in
                     lastScaleValue = 1.0
@@ -200,6 +201,6 @@ struct TimeLineView_Previews: PreviewProvider {
             
         } onEventTaped: { event in
             
-        }  
+        }
     }
 }
