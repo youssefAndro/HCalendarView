@@ -18,3 +18,14 @@ extension NSNotification {
     static let eventsRemoved = NSNotification.Name.init("all_event_removed")
     
 }
+
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+
+    func capitalizeFirstLetter() -> String{
+        return self.capitalizingFirstLetter()
+    }
+}

@@ -15,7 +15,7 @@ public struct WeekDaysSymbolsView: View {
         HStack(spacing: 0){
             ForEach(DateUtils.weekDaySymbols(weekDayFormat: calendarConfig.weekdaySymbolFormat, firstWeekday: calendarConfig.firstWeekday, local: calendarConfig.locale), id: \.self) { item in
                 Spacer()
-                Text(item)
+                Text(calendarWeekStyle.forceUpperCase ? item.capitalizeFirstLetter() : item)
                     .font(.custom(calendarWeekStyle.font, size: calendarWeekStyle.fontSize))
                     .foregroundColor(calendarWeekStyle.foreground)
                 Spacer()

@@ -44,6 +44,7 @@ public struct HCalendarWeekStyle {
     public var foreground = Color.white
     public var font = "SF"
     public var fontSize : CGFloat = 16
+    public var forceUpperCase : Bool = false
     
     public init() {
         

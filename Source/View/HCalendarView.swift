@@ -68,13 +68,13 @@ public struct HCalendarView: View {
                 Spacer()
                 
                 ZStack(){
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))")
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))".capitalizeFirstLetter())
                         .font(.custom(calendarStyle.month.font, size: calendarStyle.month.fontSize))
                         .foregroundColor(calendarStyle.month.foreground)
                         .offset(x: isMonthChanged ? 0 : fromNext ? 150 : -150)
                         .opacity(isMonthChanged ? 1 : 0)
                     
-                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))")
+                    Text("\(hCalendarVM.currentMonth.monthName(format: config.monthFormat, locale: config.locale))".capitalizeFirstLetter())
                         .font(.custom(calendarStyle.month.font, size: calendarStyle.month.fontSize))
                         .foregroundColor(calendarStyle.month.foreground)
                         .offset(x: !isMonthChanged ? 0 : fromNext ? -150 : 150)
